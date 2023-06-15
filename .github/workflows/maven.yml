@@ -18,7 +18,7 @@ on:
 # location of pom file - Nish Note
 defaults:
   run:
-    working-directory: ./SafariPark_Final
+    working-directory: ./CodeAlong_FinalCode
 
 jobs:
   build:
