@@ -15,6 +15,11 @@ on:
   pull_request:
     branches: [ "main" ]
 
+# location of pom file - Nish Note
+defaults:
+  run:
+    working-directory: ./SafariPark_Final
+
 jobs:
   build:
 
