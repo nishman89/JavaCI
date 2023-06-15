@@ -34,18 +34,11 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn --batch-mode -DskipTests package
+      run: mvn -B package --file pom.xml
       # added by Nish to default template
     - name: Run tests with Maven
       # run: mvn -B test --file pom.xml
       # run tests even if they fail
-      run: mvn -B test --file pom.xml || true
-    - name: Generate Report
-      uses: dorny/test-reporter@v1
-      if: always()
-      with:
-        name: Maven Tests
-        path: target/surefire-reports/*.xml
-        reporter: java-junit
-        fail-on-error: true
+      run: mvn -B test --file pom.xml 
+
 
