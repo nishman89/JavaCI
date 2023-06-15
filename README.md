@@ -1,8 +1,8 @@
-# JavaCI
+# Java CI
 
 [![Build and Test](https://github.com/nishman89/JavaCI/actions/workflows/maven.yml/badge.svg)](https://github.com/nishman89/JavaCI/actions/workflows/maven.yml)
 
-# JavaCI
+
 
 Updated `pom.xml` from 
 
