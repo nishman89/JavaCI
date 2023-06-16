@@ -37,8 +37,10 @@ jobs:
       run: mvn -B package --file pom.xml
       # added by Nish to default template
     - name: Run tests with Maven
-      # run: mvn -B test --file pom.xml
-      # run tests even if they fail
-      run: mvn -B test --file pom.xml 
+      run: mvn -B test --file pom.xml
+      
+      # run tests even if they fail:
+      # run: mvn --batch-mode -Dmaven.test.failure.ignore=true test
+
 
 
